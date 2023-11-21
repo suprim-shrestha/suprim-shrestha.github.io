@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    width: 321px;
+    height: 360px;
+    flex-shrink: 0;
+    border-radius: 26px;
+    background:  #FFF;
+    padding: 20px 24px 20px 25px;
+    box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.banner {
+    width: 321px;
+    height: 161px;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+
+.content {
+    margin-top: 26px;
+}
+
+.content > h1 {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22.41px;
+    letter-spacing: 0.27px;
+    margin-bottom: 13px;
+}
+
+.content > h2 {
+    color: var(--text-2, #84829A);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.92px;
+    letter-spacing: -0.08px;
+}
+
+.btn {
+    margin: 21px 3px 30px;
+    display: flex;
+}
+
+.btn > a {
+    padding: 11px;
+    border-radius: 50%;
+    background: #F5F5F5;
+    width: 14px;
+    height: 14px;
+    margin-right: 18px;
+}
+
+.content > p {
+    color: #84829A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.92px; 
+    letter-spacing: -0.32px;
+}
+
+.content > p > img {
+    margin-right: 10px;
+}
+
