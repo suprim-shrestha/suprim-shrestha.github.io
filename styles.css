@@ -1,11 +1,13 @@
 body {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .assgn {
-    width: 80%;
+    width: 100%;
 }
 
 .assgn-table {
@@ -16,13 +18,18 @@ body {
 
 .assgn-table :is(th, td) {
     border: 1px solid black;
-    border-collapse: collapse
+    border-collapse: collapse;
+    padding: 7px 0;
 }
 
 .with-link {
     text-align: center;
+    width: 20%;
 }
 
-
-
-
+.with-link a {
+    text-decoration: none;
+    background-color: rgb(93, 231, 59);
+    padding: 4px 7px;
+    border-radius: 5px;
+}
