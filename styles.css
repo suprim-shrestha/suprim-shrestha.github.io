@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.assgn {
+    width: 80%;
+}
+
+.assgn-table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.assgn-table :is(th, td) {
+    border: 1px solid black;
+    border-collapse: collapse
+}
+
+.with-link {
+    text-align: center;
+}
+
+
+
+
