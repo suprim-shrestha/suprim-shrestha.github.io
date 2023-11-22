@@ -7,19 +7,20 @@ body {
     background: #343D33;
 }
 
-.wrapper {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+.container {
+    padding: 0 2rem;
+    margin: 6rem auto;
     display: flex;
-    justify-content: center;
-    
+    flex-wrap: wrap;
+    max-width: 65rem;
+    justify-content: space-between;
 }
 
 .accent {
     position: fixed;
     bottom: 25%;
     right: 0%;
-    z-index: 0;
+    z-index: -1;
 }
 
 .accent > img {
@@ -27,15 +28,6 @@ body {
     height: 28.9rem;
     object-fit: contain;
     transform: translate(20%, 0%);
-}
-
-.container {
-    padding: 0 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 65rem;
-    justify-content: space-between;
-    z-index: 1;
 }
 
 .plant {
@@ -87,7 +79,6 @@ body {
 }
 
 .seating {
-    max-width: 65rem;
     margin-top: 5rem;
     order: 3
 }
@@ -99,10 +90,10 @@ body {
 @media (max-width: 1024px) {
     .container {
         flex-direction: column;
+        max-width: 33.375rem;
     }
 
     .seating {
-        max-width: 33.375rem;
         order: 2;
         margin-top: 2.5rem;
         margin-bottom: 3.75rem;
