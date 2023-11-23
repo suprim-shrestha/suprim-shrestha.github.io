@@ -11,10 +11,6 @@
   padding: 24px 0;
   justify-content: space-between;
   align-items: center;
-  figure {
-    display: flex;
-    align-items: center;
-  }
   img {
     max-width: 79%;
     @media screen and (min-width: $xl) {

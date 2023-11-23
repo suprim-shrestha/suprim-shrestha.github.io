@@ -11,8 +11,6 @@
   }
   &__logo {
     figure {
-      display: flex;
-      align-items: center;
       max-width: 119px;
       @media screen and (min-width: $large) {
         max-width: 142px;
