@@ -579,4 +579,33 @@ button {
   }
 }
 
+.logo-section {
+  background: rgba(255, 255, 255, 0.2);
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .logo-section {
+    display: block;
+  }
+}
+
+.logo {
+  display: flex;
+  padding: 24px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo figure {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  max-width: 79%;
+}
+@media screen and (min-width: 1200px) {
+  .logo img {
+    max-width: 100%;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

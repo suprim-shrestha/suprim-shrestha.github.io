@@ -1,0 +1,24 @@
+.logo-section {
+  background: rgba(255, 255, 255, 0.2);
+  display: none;
+  @media screen and (min-width: $medium) {
+    display: block;
+  }
+}
+
+.logo {
+  display: flex;
+  padding: 24px 0;
+  justify-content: space-between;
+  align-items: center;
+  figure {
+    display: flex;
+    align-items: center;
+  }
+  img {
+    max-width: 79%;
+    @media screen and (min-width: $xl) {
+      max-width: 100%;
+    }
+  }
+}
