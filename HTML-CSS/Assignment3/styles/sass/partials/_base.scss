@@ -36,6 +36,7 @@ h1 {
   font-weight: 700;
   line-height: 52px; /* 260% */
   letter-spacing: -0.4px;
+  margin: 0;
   @media screen and (min-width: $medium) {
     font-size: 32px;
     letter-spacing: -0.64px;
