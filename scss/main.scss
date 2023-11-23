@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.assgn {
+  width: 100%;
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+    tr:nth-child(odd) {
+      background-color: #d6eeee;
+    }
+
+    th {
+      background-color: #ddffff;
+    }
+
+    :is(th, td) {
+      padding: 10px 0;
+    }
+  }
+}
+
+.with-link {
+  text-align: center;
+  width: 20%;
+
+  a {
+    text-decoration: none;
+    background-color: rgb(93, 231, 59);
+    padding: 4px 7px;
+    border-radius: 5px;
+  }
+}
