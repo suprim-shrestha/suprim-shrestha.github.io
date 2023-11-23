@@ -1,0 +1,73 @@
+.app {
+  position: relative;
+  @media screen and (min-width: $medium) {
+    padding: 0 36px 265px;
+  }
+  @media screen and (min-width: 1400px) {
+    padding: 0 0 120px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  &__image {
+    @media screen and (min-width: $medium) {
+      width: 100%;
+      img {
+        margin: 0 auto;
+        max-width: 83%;
+        border-radius: 8px;
+      }
+    }
+    @media screen and (min-width: $xl) {
+      img {
+        margin: 0;
+      }
+    }
+  }
+  &__desc {
+    background: $white;
+    border-radius: 8px;
+    box-shadow: 0px 24px 64px -12px rgba(26, 24, 65, 0.06);
+    padding: 24px;
+    max-width: 322px;
+    @media screen and (min-width: $medium) {
+      padding: 36px;
+      max-width: 456px;
+      position: absolute;
+      right: 36px;
+      top: 229px;
+    }
+    @media screen and (min-width: $xl) {
+      padding: 52px;
+      max-width: 584px;
+      top: 86px;
+    }
+    @media screen and (min-width: 1400px) {
+      right: 0;
+    }
+  }
+  &__title h1 {
+    line-height: 31px;
+    @media screen and (min-width: $medium) {
+      line-height: 52px;
+    }
+  }
+  &__links {
+    margin-top: 20px;
+    display: flex;
+    gap: 24px;
+    img {
+      // breaks at less than 303px (unfit for galaxy fold)
+      max-height: 40px;
+      width: auto;
+    }
+    @media screen and (min-width: $medium) {
+      margin-top: 32px;
+    }
+    @media screen and (min-width: $xl) {
+      margin-top: 40px;
+      img {
+        max-height: 52px;
+      }
+    }
+  }
+}
