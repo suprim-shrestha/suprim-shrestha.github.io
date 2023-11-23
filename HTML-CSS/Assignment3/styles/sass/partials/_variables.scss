@@ -1,0 +1,31 @@
+$font-family: "Plus Jakarta Sans", sans-serif;
+
+// screen sizes
+$tablet-size: 1440px;
+$mobile-size: 768px;
+
+// font sizes
+// PC size
+$base-font-size: 16px;
+$heading-font-size: 40px;
+$card-title-font-size: 20px;
+
+// Tablet and Phone size
+$small-font-size: 14px;
+$small-card-title-size: 16px;
+$tablet-heading-size: 32px;
+$phone-heading-size: 20px;
+
+//colors
+$primary-color: #5d55ff;
+$secondary-color: #b6b3eb;
+$black: #1d1c31;
+$black-text-color: transparentize($black, 0.6);
+$white: #fff;
+$white-text-color: transparentize($white, 0.6);
+$link-color: $black;
+
+// spacings
+$title-margin-bottom: 40px;
+$card-items-spacing: 32px;
+$small-size-spacing: 20px;
