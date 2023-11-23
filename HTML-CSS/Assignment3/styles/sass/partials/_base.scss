@@ -25,3 +25,23 @@ a {
 button {
   appearance: none;
 }
+
+.main {
+  background: #fff;
+}
+
+h1 {
+  color: $black;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 52px; /* 260% */
+  letter-spacing: -0.4px;
+  @media screen and (min-width: $medium) {
+    font-size: 32px;
+    letter-spacing: -0.64px;
+  }
+  @media screen and (min-width: $xl) {
+    font-size: 40px;
+    letter-spacing: -0.8px;
+  }
+}
