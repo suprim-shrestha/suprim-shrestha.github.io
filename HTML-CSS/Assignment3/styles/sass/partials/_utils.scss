@@ -1,9 +1,9 @@
 .container {
   padding: 0 24px;
-  @media screen and (min-width: $mobile-size) {
+  @media screen and (min-width: $medium) {
     padding: 0 36px;
   }
-  @media screen and (min-width: $tablet-size) {
+  @media screen and (min-width: 1400px) {
     padding: 0;
     max-width: 1400px;
     margin: 0 auto;

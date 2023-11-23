@@ -2,18 +2,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 0;
+  padding: 23px 0;
+  @media screen and (min-width: $medium) {
+    padding: 36px 0;
+  }
+  @media screen and (min-width: $large) {
+    padding: 35px 0;
+  }
   &__logo {
     figure {
       display: flex;
       align-items: center;
-    }
-    img {
-      max-width: 142px;
+      max-width: 119px;
+      @media screen and (min-width: $large) {
+        max-width: 142px;
+      }
     }
   }
   &__nav {
-    display: flex;
+    display: none;
     list-style: none;
     gap: 32px;
     align-items: center;
@@ -21,25 +28,17 @@
       color: $secondary-color;
       &.selected {
         color: $white;
+        font-weight: 500;
       }
+    }
+    @media screen and (min-width: $medium) {
+      display: flex;
     }
   }
   &__mobile-toggle {
-    display: none;
-  }
-  @media screen and (max-width: $tablet-size) {
-    padding: 36px 0;
-    &__logo img {
-      max-width: 119px;
-    }
-  }
-  @media screen and (max-width: $mobile-size) {
-    padding: 23px 0;
-    &__mobile-toggle {
-      cursor: pointer;
-      display: inline-block;
-    }
-    &__nav {
+    display: inline-block;
+    cursor: pointer;
+    @media screen and (min-width: $medium) {
       display: none;
     }
   }
