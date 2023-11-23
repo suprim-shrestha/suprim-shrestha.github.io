@@ -4,15 +4,23 @@
   border: none;
   cursor: pointer;
   // default button is medium sized
-  padding: 16px 32px;
+  padding: 16px 24px;
   // small sized button
   &.small {
     padding: 12px 24px;
     line-height: 20px;
   }
-
+  &.big {
+    padding: 24px 32px;
+    font-size: 18px;
+  }
   &.sign-up {
     background: rgba(255, 255, 255, 0.1);
     color: $white;
+  }
+  &.secondary {
+    background: none;
+    color: $white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
