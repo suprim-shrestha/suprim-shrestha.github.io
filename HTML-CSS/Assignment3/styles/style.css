@@ -389,19 +389,25 @@ figure {
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  padding: 16px 24px;
-}
-.btn.small {
-  padding: 12px 24px;
-  line-height: 20px;
-}
-.btn.big {
-  padding: 24px 32px;
-  font-size: 18px;
+  line-height: normal;
 }
 .btn.sign-up {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
+  padding: 8px 16px;
+}
+@media screen and (min-width: 1200px) {
+  .btn.sign-up {
+    padding: 12px 24px;
+  }
+}
+.btn.hero-btn {
+  padding: 16px 24px;
+}
+@media screen and (min-width: 1200px) {
+  .btn.hero-btn {
+    padding: 24px 32px;
+  }
 }
 .btn.secondary {
   background: none;

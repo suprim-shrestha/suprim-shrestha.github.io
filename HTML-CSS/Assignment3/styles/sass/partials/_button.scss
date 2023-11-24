@@ -3,20 +3,20 @@
   border-radius: 8px;
   border: none;
   cursor: pointer;
-  // default button is medium sized
-  padding: 16px 24px;
-  // small sized button
-  &.small {
-    padding: 12px 24px;
-    line-height: 20px;
-  }
-  &.big {
-    padding: 24px 32px;
-    font-size: 18px;
-  }
+  line-height: normal;
   &.sign-up {
     background: rgba(255, 255, 255, 0.1);
     color: $white;
+    padding: 8px 16px;
+    @media screen and (min-width: $xl) {
+      padding: 12px 24px;
+    }
+  }
+  &.hero-btn {
+    padding: 16px 24px;
+    @media screen and (min-width: $xl) {
+      padding: 24px 32px;
+    }
   }
   &.secondary {
     background: none;
