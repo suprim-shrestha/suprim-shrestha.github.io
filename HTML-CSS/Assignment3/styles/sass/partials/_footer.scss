@@ -17,7 +17,7 @@
     padding: 24px 0;
     @media screen and (min-width: $medium) {
       flex-direction: row;
-      gap: 86px;
+      justify-content: space-between;
       padding: 60px 0 36px;
       border-bottom: 1px solid transparentize($black, 0.9);
     }
@@ -73,8 +73,13 @@
   &__links {
     display: flex;
     gap: 90px;
+    @media screen and (min-width: $medium) {
+      margin-top: 31px;
+      flex-basis: 35%;
+    }
     @media screen and (min-width: $xl) {
       gap: 103px;
+      margin-top: 41px;
     }
     ul {
       list-style: none;

@@ -1153,7 +1153,7 @@ figure {
 @media screen and (min-width: 768px) {
   .footer__top {
     flex-direction: row;
-    gap: 86px;
+    justify-content: space-between;
     padding: 60px 0 36px;
     border-bottom: 1px solid rgba(29, 28, 49, 0.1);
   }
@@ -1220,9 +1220,16 @@ figure {
   display: flex;
   gap: 90px;
 }
+@media screen and (min-width: 768px) {
+  .footer__links {
+    margin-top: 31px;
+    flex-basis: 35%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__links {
     gap: 103px;
+    margin-top: 41px;
   }
 }
 .footer__links ul {
