@@ -1105,6 +1105,7 @@ figure {
   border-radius: 8px;
   text-align: center;
   padding: 12px 20px;
+  font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .guideline__timeline--date {
