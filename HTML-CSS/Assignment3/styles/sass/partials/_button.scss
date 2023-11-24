@@ -23,4 +23,17 @@
     color: $white;
     border: 1px solid rgba(255, 255, 255, 0.2);
   }
+  &.subscribe {
+    padding: 10px 24px;
+    background: #4e46e8;
+    color: $white;
+    align-self: center;
+    @media screen and (min-width: $medium) {
+      color: $black;
+      background: $white;
+    }
+    @media screen and (min-width: $xl) {
+      padding: 16px 32px;
+    }
+  }
 }

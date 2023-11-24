@@ -1,0 +1,116 @@
+.footer {
+  background: #efeeff;
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+    @media screen and (min-width: $xl) {
+      font-size: 20px;
+      margin-bottom: 24px;
+    }
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0;
+    @media screen and (min-width: $medium) {
+      flex-direction: row;
+      gap: 86px;
+      padding: 60px 0 36px;
+      border-bottom: 1px solid transparentize($black, 0.9);
+    }
+    @media screen and (min-width: $xl) {
+      padding: 70px 0 40px;
+    }
+  }
+  &__subscription {
+    @media screen and (min-width: $medium) {
+      border-radius: 8px;
+      background: $black;
+      box-shadow: 0px 0px 30px 2px rgba(93, 85, 255, 0.1) inset;
+      padding: 24px 24px 32px;
+      color: $white;
+      flex-basis: 45%;
+    }
+    &--title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 24px;
+      @media screen and (min-width: $medium) {
+        color: $white;
+      }
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+    @media screen and (min-width: $medium) {
+      gap: 24px;
+      flex-direction: row;
+      margin-top: 32px;
+    }
+    @media screen and (min-width: $xl) {
+      gap: 33px;
+      margin-top: 40px;
+    }
+    input {
+      border: none;
+      background-color: transparent;
+      border-bottom: 1px solid rgba(29, 28, 49, 0.2);
+      max-width: 330px;
+      padding: 6px;
+      @media screen and (min-width: $medium) {
+        border-bottom: 1px solid $white;
+        flex-basis: 60%;
+      }
+    }
+  }
+  &__links {
+    display: flex;
+    gap: 90px;
+    @media screen and (min-width: $xl) {
+      gap: 103px;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      @media screen and (min-width: $xl) {
+        gap: 24px;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 24px;
+    @media screen and (min-width: $medium) {
+      padding: 41px 0 36px;
+    }
+    @media screen and (min-width: $xl) {
+      padding: 26px 0 34px;
+    }
+  }
+  &__actions {
+    order: -1;
+    flex-basis: 100%;
+    margin-bottom: 16px;
+    @media screen and (min-width: $medium) {
+      order: 0;
+      flex-basis: auto;
+    }
+  }
+  &__rights {
+    order: 1;
+    @media screen and (min-width: $medium) {
+      order: 0;
+    }
+  }
+}
