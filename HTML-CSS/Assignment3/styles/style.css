@@ -828,6 +828,27 @@ figure {
     display: flex;
   }
 }
+.clients__top {
+  display: flex;
+  justify-content: space-between;
+}
+.clients__actions {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .clients__actions {
+    display: flex;
+    gap: 16px;
+  }
+}
+.clients__actions a {
+  display: flex;
+  align-items: center;
+  max-width: 24px;
+  border-radius: 50%;
+  background: rgba(29, 28, 49, 0.05);
+  padding: 14px;
+}
 .clients__cards {
   display: flex;
   gap: 20px;
@@ -836,7 +857,7 @@ figure {
 @media screen and (min-width: 1200px) {
   .clients__cards {
     gap: 32px;
-    margin: 40px 0 167px;
+    margin: 40px 0 39px;
   }
 }
 .clients__info {
@@ -895,21 +916,41 @@ figure {
 }
 .clients__card--image {
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  max-width: 70px;
+  max-height: 70px;
   border: 3px solid #fff;
   box-shadow: 0px 4px 27px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
   .clients__card--image {
-    width: 80px;
-    height: 80px;
+    max-width: 80px;
+    max-height: 80px;
   }
 }
 .clients__card--image img {
   width: 100%;
   height: auto;
+}
+.clients__card.selected {
+  background: linear-gradient(122deg, #5d55ff 0.86%, #4a43e3 100%);
+  color: #fff;
+}
+.clients__card.selected .clients__card--name {
+  color: #fff;
+}
+.clients__card.selected .clients__card--date {
+  color: rgba(255, 255, 255, 0.5);
+}
+.clients__bottom {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .clients__bottom {
+    display: flex;
+    max-width: 284px;
+    margin: 0 auto 120px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

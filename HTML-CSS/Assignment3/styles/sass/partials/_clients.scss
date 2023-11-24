@@ -3,13 +3,32 @@
   @media screen and (min-width: $medium) {
     display: flex;
   }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__actions {
+    display: none;
+    @media screen and (min-width: $xl) {
+      display: flex;
+      gap: 16px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      max-width: 24px;
+      border-radius: 50%;
+      background: rgba(29, 28, 49, 0.05);
+      padding: 14px;
+    }
+  }
   &__cards {
     display: flex;
     gap: 20px;
     margin: 32px 0 80px;
     @media screen and (min-width: $xl) {
       gap: 32px;
-      margin: 40px 0 167px;
+      margin: 40px 0 39px;
     }
   }
   &__info {
@@ -59,25 +78,37 @@
     }
     &--image {
       border-radius: 50%;
-      width: 70px;
-      height: 70px;
+      max-width: 70px;
+      max-height: 70px;
       border: 3px solid #fff;
       box-shadow: 0px 4px 27px 0px rgba(0, 0, 0, 0.2);
       overflow: hidden;
       @media screen and (min-width: $xl) {
-        width: 80px;
-        height: 80px;
+        max-width: 80px;
+        max-height: 80px;
       }
       img {
         width: 100%;
         height: auto;
       }
     }
+    &.selected {
+      background: linear-gradient(122deg, #5d55ff 0.86%, #4a43e3 100%);
+      color: $white;
+      .clients__card--name {
+        color: $white;
+      }
+      .clients__card--date {
+        color: transparentize($white, 0.5);
+      }
+    }
+  }
+  &__bottom {
+    display: none;
+    @media screen and (min-width: $xl) {
+      display: flex;
+      max-width: 284px;
+      margin: 0 auto 120px;
+    }
   }
 }
-// .selected.clients__card {
-//   background: linear-gradient(122deg, #5d55ff 0.86%, #4a43e3 100%);
-//   &--name {
-//     color: white;
-//   }
-// }
