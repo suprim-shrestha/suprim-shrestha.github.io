@@ -63,6 +63,7 @@
     &--info {
       text-align: center;
       margin-bottom: 16px;
+      color: $faded-black;
       @media screen and (min-width: $xl) {
         margin-bottom: 32px;
       }
