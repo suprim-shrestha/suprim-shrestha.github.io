@@ -17,9 +17,9 @@ $small-font-size: 14px;
 $primary-color: #5d55ff;
 $secondary-color: #b6b3eb;
 $black: #1d1c31;
-$black-text-color: transparentize($black, 0.6);
+$faded-black: transparentize($black, 0.4);
 $white: #fff;
-$white-text-color: transparentize($white, 0.6);
+$faded-white: transparentize($white, 0.4);
 $link-color: $black;
 
 // spacings

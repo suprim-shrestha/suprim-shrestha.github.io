@@ -51,6 +51,10 @@
       line-height: 52px;
     }
   }
+  &__info {
+    color: $faded-black;
+    line-height: 28px;
+  }
   &__links {
     margin-top: 20px;
     display: flex;
