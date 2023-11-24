@@ -1,0 +1,133 @@
+.guideline {
+  background-image: url(../assets/images/guideline-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__top {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    @media screen and (min-width: $medium) {
+      justify-content: space-between;
+      padding: 44px 0;
+    }
+    @media screen and (min-width: $xl) {
+      padding: 70px 0 140px;
+    }
+    h1 {
+      color: $white;
+    }
+  }
+  &__info {
+    display: none;
+    color: $faded-white;
+    p {
+      max-width: 226px;
+    }
+    @media screen and (min-width: $medium) {
+      display: flex;
+      gap: 14px;
+    }
+    @media screen and (min-width: $xl) {
+      gap: 32px;
+    }
+  }
+  &__timeline {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 24px;
+    &--item:nth-child(3n) {
+      display: none;
+    }
+    &--item:nth-child(4n) {
+      display: none;
+    }
+    @media screen and (min-width: $medium) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 18px;
+      padding-bottom: 52px;
+      &--item:nth-child(3n) {
+        display: flex;
+      }
+    }
+    @media screen and (min-width: $large) {
+      &--item:nth-child(4n) {
+        display: flex;
+      }
+    }
+    @media screen and (min-width: $xl) {
+      gap: 32px;
+      padding-bottom: 213px;
+    }
+    &--item {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      align-items: center;
+      @media screen and (min-width: $medium) {
+        flex-direction: column;
+        gap: 96px;
+      }
+    }
+    &--item:nth-child(even) {
+      flex-direction: row-reverse;
+      @media screen and (min-width: $medium) {
+        flex-direction: column-reverse;
+      }
+    }
+    &--desc {
+      padding: 24px 31px;
+      border-radius: 8px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      @media screen and (min-width: $xl) {
+        padding: 32px 64px;
+      }
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      @media screen and (min-width: $xl) {
+        gap: 25px;
+      }
+    }
+    li {
+      display: flex;
+      gap: 16px;
+      color: $white;
+    }
+    &--date {
+      background: $white;
+      border-radius: 8px;
+      text-align: center;
+      padding: 12px 20px;
+      @media screen and (min-width: $medium) {
+        width: 164px;
+      }
+      @media screen and (min-width: $xl) {
+        padding: 16px 24px;
+        width: 186px;
+      }
+      span {
+        color: $black;
+        @media screen and (min-width: $xl) {
+        }
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 24px;
+    a {
+      color: $white;
+    }
+    @media screen and (min-width: $large) {
+      display: none;
+    }
+  }
+}
