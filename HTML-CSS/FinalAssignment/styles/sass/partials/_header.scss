@@ -1,0 +1,80 @@
+.header {
+  &__main {
+    display: flex;
+    align-items: center;
+    padding: 50px 0 32px;
+    @media screen and (min-width: $lg) {
+      padding: 41px 0 100px;
+    }
+  }
+  &__logo a {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      height: 3px;
+      width: 80px;
+      background-color: $primary-color;
+      transition: width 0.3s ease;
+      @media screen and (min-width: $lg) {
+        width: 100px;
+      }
+    }
+  }
+  &__navbar {
+    display: none;
+    @media screen and (min-width: $lg) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  &__links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+  &__link {
+    color: $faded-white;
+    &--active {
+      color: #fff;
+      font-weight: 700;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -15px;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: $primary-color;
+      }
+    }
+  }
+  &__button {
+    display: none;
+    @media screen and (min-width: $lg) {
+      display: block;
+    }
+  }
+  &__mobile-toggle {
+    margin-left: auto;
+    span {
+      padding: 5px;
+      border-radius: 10px;
+      background: rgba(196, 196, 196, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: $lg) {
+      display: none;
+    }
+  }
+}
