@@ -735,4 +735,24 @@ h1 {
   }
 }
 
+.logo-section {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.logo {
+  display: flex;
+  padding: 6px 0 4px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+@media screen and (min-width: 576px) {
+  .logo {
+    gap: 25px;
+  }
+}
+.logo img {
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
