@@ -1,0 +1,196 @@
+.hero {
+  &__top {
+    @media screen and (min-width: $lg) {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+    }
+  }
+  &__left {
+    flex-basis: 45%;
+    margin-bottom: 50px;
+    @media screen and (min-width: $md) {
+      margin-bottom: 55px;
+    }
+  }
+  &__right {
+    margin-bottom: 77px;
+    @media screen and (min-width: $md) {
+      margin-bottom: 85px;
+    }
+    @media screen and (min-width: $lg) {
+      margin-bottom: 23px;
+    }
+  }
+  &__slogan {
+    color: $primary-color;
+    font-size: 12px;
+    font-weight: 700;
+    @media screen and (min-width: $sm) {
+      font-size: 18px;
+    }
+    @media screen and (min-width: $xl) {
+      font-size: $font-size-xl;
+    }
+  }
+  &__title {
+    color: #fff;
+    margin: 20px 0;
+    span {
+      color: $primary-color;
+    }
+    @media screen and (min-width: $md) {
+      margin: 40px 0;
+    }
+    @media screen and (min-width: $lg) {
+      margin: 40px 0 50px;
+    }
+  }
+  &__info {
+    color: transparentize(#fff, 0.3);
+    margin-bottom: 40px;
+    @media screen and (min-width: $lg) {
+      margin-bottom: 50px;
+    }
+  }
+  &__actions {
+    display: flex;
+    gap: 20px;
+  }
+  &__image {
+    max-width: 622px;
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+  &__specialists {
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    max-width: 198px;
+    padding: 15px 20px;
+    border-radius: 20px;
+    background: rgba(196, 196, 196, 0.2);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1),
+      0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    @media screen and (min-width: $sm) {
+      bottom: -46px;
+      gap: 20px;
+      max-width: 334px;
+      padding: 20px;
+    }
+    &--image {
+      flex-basis: 45%;
+    }
+    &--info {
+      color: #fff;
+      font-weight: 700;
+      p {
+        margin: 0;
+      }
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+  &__bottom--title {
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    span {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      border-radius: 10px;
+      background: rgba(196, 196, 196, 0.1);
+    }
+    @media screen and (min-width: $sm) {
+      gap: 20px;
+      font-size: 24px;
+      svg {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+      }
+    }
+  }
+  &__appointment-outer {
+    padding-top: 10px;
+    border-radius: 20px 20px 0px 0px;
+    background: rgba(196, 196, 196, 0.05);
+  }
+  &__appointment {
+    padding: 20px 10px 10px;
+    border-radius: 20px 20px 0px 0px;
+    background: rgba(196, 196, 196, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    flex-direction: column;
+    @media screen and (min-width: $md) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 37px 36px 45px 12px;
+    }
+    @media screen and (min-width: $lg) {
+      gap: 30px;
+      padding: 40px;
+    }
+    @media screen and (min-width: $xl) {
+      gap: 60px;
+    }
+    &--item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      @media screen and (min-width: $sm) {
+        gap: 20px;
+      }
+      @media screen and (min-width: $md) {
+        flex-basis: 45%;
+      }
+      @media screen and (min-width: $lg) {
+        flex-basis: auto;
+      }
+    }
+    &--info {
+      display: flex;
+      flex-direction: column;
+      font-weight: 600;
+      color: $faded-white;
+      span {
+        font-weight: 700;
+        color: #fff;
+      }
+    }
+    &--button {
+      flex-basis: 45%;
+      @media screen and (min-width: $lg) {
+        margin-left: auto;
+        flex-basis: auto;
+      }
+    }
+  }
+  .svg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    background: rgba(196, 196, 196, 0.1);
+    @media screen and (min-width: $sm) {
+      svg {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+      }
+    }
+  }
+}
