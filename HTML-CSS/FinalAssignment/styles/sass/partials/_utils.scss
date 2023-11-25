@@ -1,0 +1,14 @@
+.container {
+  padding: 0 35px;
+  @media screen and (min-width: $sm) {
+    padding: 0 50px;
+  }
+  @media screen and (min-width: $md) {
+    padding: 0 70px;
+  }
+  @media screen and (min-width: $xxl) {
+    padding: 0;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
