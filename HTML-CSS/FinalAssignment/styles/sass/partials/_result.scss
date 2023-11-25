@@ -1,0 +1,102 @@
+.results-section {
+  background-image: url(../assets/images/bg-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+  padding: 84px 0 32px;
+  @media screen and (min-width: $md) {
+    padding: 57px 0;
+  }
+  @media screen and (min-width: $lg) {
+    padding: 63px 0;
+  }
+}
+
+.result {
+  border-radius: 20px;
+  background: rgba(196, 196, 196, 0.1);
+  padding-bottom: 32px;
+  @media screen and (min-width: $md) {
+    padding-bottom: 45px;
+  }
+  @media screen and (min-width: $lg) {
+    padding-bottom: 31px;
+  }
+
+  &__title {
+    max-width: 100%;
+    background: rgba(196, 196, 196, 0.05);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    padding: 14px 0;
+    @media screen and (min-width: $md) {
+      padding: 18px 0 13px;
+    }
+    @media screen and (min-width: $lg) {
+      padding: 36px 0 36px 93px;
+      text-align: left;
+    }
+  }
+  &__middle {
+    padding: 21px 0 48px;
+    margin: 0 13px;
+    @media screen and (min-width: $md) {
+      padding: 40px 0 50px;
+      margin: 0 110px;
+    }
+    @media screen and (min-width: $lg) {
+      padding: 35px 0;
+      margin: 0 93px;
+    }
+  }
+  &__form {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    @media screen and (min-width: $lg) {
+      flex-direction: row;
+    }
+    input {
+      color: #fff;
+      flex-grow: 1;
+      padding: 16px 17px;
+      background: none;
+      border-radius: 20px;
+      border: 3px solid rgba(196, 196, 196, 0.15);
+      @media screen and (min-width: $md) {
+        padding: 20px 25px;
+      }
+      &:focus {
+        border: 3px solid $primary-color;
+      }
+    }
+  }
+  &__bottom {
+    border-radius: 10px;
+    background: rgba(196, 196, 196, 0.05);
+    font-size: 10px;
+    font-weight: 700;
+    color: $primary-color;
+    text-align: center;
+    padding: 13px 0;
+    margin: 0 13px;
+    @media screen and (min-width: $sm) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: $md) {
+      padding: 14px 0 19px;
+      margin: 0 64px;
+    }
+    @media screen and (min-width: $lg) {
+      font-size: 24px;
+      padding: 20px 0 21px;
+      margin: 0 93px;
+    }
+    a {
+      text-decoration: underline;
+      color: $primary-color;
+    }
+  }
+}
