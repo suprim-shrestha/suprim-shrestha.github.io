@@ -23,6 +23,7 @@ a {
 
 button {
   appearance: none;
+  line-height: 1.2;
 }
 
 ul {
@@ -37,10 +38,11 @@ figure {
 h1 {
   font-size: 24px;
   font-weight: 700;
+  margin: 0;
   @media screen and (min-width: $sm) {
-    font-weight: 36px;
+    font-size: 36px;
   }
   @media screen and (min-width: $lg) {
-    font-weight: 40px;
+    font-size: 40px;
   }
 }
