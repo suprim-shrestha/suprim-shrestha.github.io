@@ -1,9 +1,9 @@
 .container {
   padding: 0 35px;
-  @media screen and (min-width: $sm) {
+  @media screen and (min-width: $md) {
     padding: 0 50px;
   }
-  @media screen and (min-width: $md) {
+  @media screen and (min-width: $lg) {
     padding: 0 70px;
   }
   @media screen and (min-width: $xxl) {
@@ -11,4 +11,12 @@
     max-width: 1300px;
     margin: 0 auto;
   }
+}
+
+.top {
+  background-image: url(../assets/images/bg-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
 }
