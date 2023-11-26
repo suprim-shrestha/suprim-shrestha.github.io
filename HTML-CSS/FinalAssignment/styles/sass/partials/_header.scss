@@ -55,6 +55,9 @@
         background-color: $primary-color;
       }
     }
+    &:hover {
+      color: #fff;
+    }
   }
   &__button {
     display: none;

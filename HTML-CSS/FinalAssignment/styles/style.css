@@ -518,6 +518,9 @@ h1 {
   border-radius: 50%;
   background-color: #17c2ec;
 }
+.header__link:hover {
+  color: #fff;
+}
 .header__button {
   display: none;
 }
@@ -1705,6 +1708,9 @@ h1 {
 .footer__link--active {
   color: #fff;
   font-weight: 700;
+}
+.footer__link:hover {
+  color: #fff;
 }
 .footer__actions {
   display: flex;
