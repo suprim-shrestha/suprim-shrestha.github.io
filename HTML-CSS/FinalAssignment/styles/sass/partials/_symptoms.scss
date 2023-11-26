@@ -1,0 +1,116 @@
+.symptoms {
+  @extend %bg-image;
+  padding-top: 25px;
+  @media screen and (min-width: $md) {
+    padding-top: 40px;
+  }
+  @media screen and (min-width: $lg) {
+    padding-top: 67px;
+  }
+  &__top {
+    text-align: center;
+    color: #fff;
+    h2 {
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      @media screen and (min-width: $md) {
+        font-size: 20px;
+      }
+      @media screen and (min-width: $lg) {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+    }
+    span {
+      color: $primary-color;
+    }
+    p {
+      color: $faded-white;
+      font-size: 12px;
+      margin: 10px 0 30px;
+      @media screen and (min-width: $md) {
+        margin: 40px 0 60px;
+        font-size: 18px;
+      }
+      @media screen and (min-width: $lg) {
+        margin: 40px 0 179px;
+        font-size: 24px;
+      }
+    }
+  }
+  &__bottom {
+    position: relative;
+  }
+  &__image {
+    width: 60%;
+    max-width: 708px;
+    margin: 0 auto;
+  }
+  &__list {
+    position: absolute;
+    max-width: 1300px;
+    width: 90%;
+    height: 80%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &--item {
+      position: relative;
+    }
+    &--image {
+      position: absolute;
+      left: -32px;
+      top: 50%;
+      transform: translate(50%, -45%);
+      max-width: 32px;
+      @media screen and (min-width: $sm) {
+        max-width: 50px;
+        left: -56px;
+      }
+      @media screen and (min-width: $md) {
+        left: -64px;
+        max-width: 65px;
+      }
+      @media screen and (min-width: $lg) {
+        left: -70px;
+        max-width: 100px;
+      }
+    }
+    &--symptom {
+      border-radius: 4.863px;
+      background: rgba(196, 196, 196, 0.2);
+      color: $primary-color;
+      font-weight: 600;
+      font-size: 8.735px;
+      padding: 5px 4px 5px 16px;
+      @media screen and (min-width: $sm) {
+        padding: 8px 6px 8px 20px;
+        font-size: 14px;
+      }
+      @media screen and (min-width: $md) {
+        border-radius: 10px;
+        padding: 12px 8px 12px 32px;
+        font-size: 18px;
+      }
+      @media screen and (min-width: $lg) {
+        padding: 23px 30px 23px 80px;
+        font-size: 20px;
+      }
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &.row-1 {
+      margin: 0 10%;
+    }
+    &.row-2 {
+      margin: 0 5%;
+    }
+  }
+}
