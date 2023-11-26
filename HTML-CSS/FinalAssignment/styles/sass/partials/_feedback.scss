@@ -1,0 +1,126 @@
+.feedback {
+  @extend %bg-image;
+  background-image: url(../assets/images/bg-image-2.jpg);
+  padding: 30px 0 158px;
+  @media screen and (min-width: $md) {
+    padding: 46px 0 163px;
+  }
+  @media screen and (min-width: $lg) {
+    padding: 57px 0 231px;
+  }
+  &__top {
+    text-align: center;
+    span {
+      color: $primary-color;
+      font-weight: 700;
+    }
+    h1 {
+      font-weight: 800;
+      margin: 20px 0 10px;
+      @media screen and (min-width: $md) {
+        margin: 20px 0 40px;
+      }
+    }
+    p {
+      color: $faded-black;
+      font-size: 12px;
+      @media screen and (min-width: $sm) {
+        font-size: 18px;
+      }
+      @media screen and (min-width: $lg) {
+        font-size: 24px;
+      }
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 16px;
+    @media screen and (min-width: $md) {
+      margin-top: 60px;
+    }
+    @media screen and (min-width: $lg) {
+      margin-top: 100px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  &__card {
+    position: relative;
+    padding: 23px 23px 33px;
+    border-radius: 13.55px;
+    background: rgba(196, 196, 196, 0.5);
+    max-width: 259px;
+    flex: 1;
+    @media screen and (min-width: $md) {
+      padding: 30px 30px 44px;
+      border-radius: 20px;
+      max-width: 340px;
+    }
+    &--image {
+      max-width: 54px;
+      @media screen and (min-width: $md) {
+        max-width: 70px;
+      }
+    }
+    &--top {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 30px;
+      @media screen and (min-width: $md) {
+        margin-bottom: 40px;
+        gap: 20px;
+      }
+    }
+    &--name {
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 4px;
+      @media screen and (min-width: $md) {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+      @media screen and (min-width: $lg) {
+        font-size: 24px;
+      }
+    }
+    &--address {
+      font-weight: 700;
+      font-size: 10px;
+      color: $faded-black;
+      @media screen and (min-width: $md) {
+        font-size: 14px;
+      }
+    }
+    &--feedback {
+      color: transparentize(#000, 0.4);
+      font-size: 12px;
+      text-align: center;
+      span {
+        color: $primary-color;
+      }
+      @media screen and (min-width: $md) {
+        font-size: 18px;
+      }
+    }
+  }
+  &__card-bg {
+    position: absolute;
+    max-width: 124px;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    @media screen and (min-width: $md) {
+      max-width: 174px;
+    }
+    @media screen and (min-width: $lg) {
+      max-width: 294px;
+      left: 15%;
+      transform: none;
+      top: -60%;
+    }
+  }
+}
