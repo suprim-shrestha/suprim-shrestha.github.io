@@ -103,7 +103,7 @@
       border: none;
       border-radius: 10px;
       background: rgba(11, 21, 60, 0.15);
-      padding: 16px 20px;
+      padding: 16px 30px;
       margin-bottom: 20px;
       @media screen and (min-width: $md) {
         padding: 23px 30px;
@@ -112,6 +112,10 @@
       }
     }
     &--number {
+      .phone-number {
+        position: relative;
+        flex-grow: 1;
+      }
       max-width: 100%;
       display: flex;
       gap: 20px;
@@ -126,9 +130,19 @@
         gap: 36px;
       }
       input {
-        flex-grow: 1;
         margin-bottom: 0;
         min-width: 10px;
+        padding-left: 114px;
+        box-sizing: border-box;
+        width: 100%;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
       }
     }
     &--bottom {

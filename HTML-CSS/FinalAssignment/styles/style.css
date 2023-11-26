@@ -310,6 +310,22 @@ template {
   display: none;
 }
 
+/* Hide the default number input arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input:focus {
+  outline: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1199,7 +1215,7 @@ h1 {
   border: none;
   border-radius: 10px;
   background: rgba(11, 21, 60, 0.15);
-  padding: 16px 20px;
+  padding: 16px 30px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -1216,6 +1232,10 @@ h1 {
   flex-direction: column;
   margin-bottom: 60px;
 }
+.registration__form--number .phone-number {
+  position: relative;
+  flex-grow: 1;
+}
 @media screen and (min-width: 768px) {
   .registration__form--number {
     flex-direction: row;
@@ -1229,9 +1249,19 @@ h1 {
   }
 }
 .registration__form--number input {
-  flex-grow: 1;
   margin-bottom: 0;
   min-width: 10px;
+  padding-left: 114px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.registration__form--number span {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
 }
 .registration__form--bottom {
   color: rgba(0, 0, 0, 0.5);
