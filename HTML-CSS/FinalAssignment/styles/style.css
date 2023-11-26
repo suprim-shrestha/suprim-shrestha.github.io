@@ -829,11 +829,11 @@ h1 {
   color: #fff;
   text-align: center;
   font-weight: 700;
-  padding: 14px 0;
+  padding: 14px 5px;
 }
 @media screen and (min-width: 768px) {
   .result__title {
-    padding: 18px 0 13px;
+    padding: 18px 5px 13px;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -891,7 +891,7 @@ h1 {
   font-weight: 700;
   color: #17c2ec;
   text-align: center;
-  padding: 13px 0;
+  padding: 13px 5px;
   margin: 0 13px;
 }
 @media screen and (min-width: 576px) {
@@ -901,14 +901,14 @@ h1 {
 }
 @media screen and (min-width: 768px) {
   .result__bottom {
-    padding: 14px 0 19px;
+    padding: 14px 5px 19px;
     margin: 0 64px;
   }
 }
 @media screen and (min-width: 1025px) {
   .result__bottom {
     font-size: 24px;
-    padding: 20px 0 21px;
+    padding: 20px 5px 21px;
     margin: 0 93px;
   }
 }

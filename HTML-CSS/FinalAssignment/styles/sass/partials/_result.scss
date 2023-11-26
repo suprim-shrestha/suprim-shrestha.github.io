@@ -26,9 +26,9 @@
     color: #fff;
     text-align: center;
     font-weight: 700;
-    padding: 14px 0;
+    padding: 14px 5px;
     @media screen and (min-width: $md) {
-      padding: 18px 0 13px;
+      padding: 18px 5px 13px;
     }
     @media screen and (min-width: $lg) {
       padding: 36px 0 36px 93px;
@@ -76,18 +76,18 @@
     font-weight: 700;
     color: $primary-color;
     text-align: center;
-    padding: 13px 0;
+    padding: 13px 5px;
     margin: 0 13px;
     @media screen and (min-width: $sm) {
       font-size: 14px;
     }
     @media screen and (min-width: $md) {
-      padding: 14px 0 19px;
+      padding: 14px 5px 19px;
       margin: 0 64px;
     }
     @media screen and (min-width: $lg) {
       font-size: 24px;
-      padding: 20px 0 21px;
+      padding: 20px 5px 21px;
       margin: 0 93px;
     }
     a {
