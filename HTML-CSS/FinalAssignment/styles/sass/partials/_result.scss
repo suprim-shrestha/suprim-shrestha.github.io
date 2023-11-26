@@ -22,12 +22,14 @@
 
   &__title {
     max-width: 100%;
+    border-radius: 10px 10px 0px 0px;
     background: rgba(196, 196, 196, 0.05);
     color: #fff;
     text-align: center;
     font-weight: 700;
     padding: 14px 5px;
     @media screen and (min-width: $md) {
+      border-radius: 20px 20px 0px 0px;
       padding: 18px 5px 13px;
     }
     @media screen and (min-width: $lg) {

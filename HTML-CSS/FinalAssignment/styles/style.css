@@ -825,6 +825,7 @@ h1 {
 }
 .result__title {
   max-width: 100%;
+  border-radius: 10px 10px 0px 0px;
   background: rgba(196, 196, 196, 0.05);
   color: #fff;
   text-align: center;
@@ -833,6 +834,7 @@ h1 {
 }
 @media screen and (min-width: 768px) {
   .result__title {
+    border-radius: 20px 20px 0px 0px;
     padding: 18px 5px 13px;
   }
 }
@@ -1513,7 +1515,17 @@ h1 {
     font-size: 18px;
   }
 }
+.feedback__card.is-active {
+  background: #17c2ec;
+}
+.feedback__card.is-active * {
+  color: rgba(255, 255, 255, 0.75);
+}
+.feedback__card.is-active .feedback__card--name {
+  color: #fff;
+}
 .feedback__card-bg {
+  z-index: -1;
   position: absolute;
   max-width: 124px;
   top: -10%;
