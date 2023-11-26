@@ -1,0 +1,150 @@
+.registration {
+  @extend %bg-image;
+  background-image: url(../assets/images/bg-image-2.jpg);
+  padding: 35px 0 41px;
+  @media screen and (min-width: $md) {
+    padding: 40px 0 49px;
+  }
+  @media screen and (min-width: $lg) {
+    padding: 40px 0 33px;
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 39px;
+    @media screen and (min-width: $md) {
+      margin-bottom: 65px;
+      text-align: left;
+    }
+    @media screen and (min-width: $lg) {
+      max-width: 45%;
+    }
+  }
+  &__image {
+    max-width: 289px;
+    min-height: 418px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    background: #0b153c;
+    border-radius: 15px;
+    @media screen and (min-width: $sm) {
+      max-width: none;
+      width: 380px;
+      min-height: 550px;
+      border-radius: 20px;
+    }
+    @media screen and (min-width: $lg) {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+    &--virus {
+      max-width: 25%;
+      position: absolute;
+      top: -4.5%;
+      left: -5.5%;
+    }
+    &--bg {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: 0;
+      img {
+        border-radius: 15px;
+        @media screen and (min-width: $sm) {
+          border-radius: 20px;
+        }
+      }
+    }
+    &--title {
+      padding-top: 36px;
+      @media screen and (min-width: $sm) {
+        padding-top: 40px;
+      }
+    }
+    &--button {
+      position: absolute;
+      z-index: 1;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      bottom: 49px;
+      @media screen and (min-width: $sm) {
+        bottom: 79px;
+      }
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 39px;
+    @media screen and (min-width: $md) {
+      margin-top: 70px;
+    }
+    @media screen and (min-width: $lg) {
+      max-width: 50%;
+      margin-top: 40px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    input {
+      border: none;
+      border-radius: 10px;
+      background: rgba(11, 21, 60, 0.15);
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      @media screen and (min-width: $md) {
+        padding: 23px 30px;
+        border-radius: 20px;
+        margin-bottom: 40px;
+      }
+    }
+    &--number {
+      max-width: 100%;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      margin-bottom: 60px;
+      @media screen and (min-width: $md) {
+        flex-direction: row;
+        gap: 50px;
+        margin-bottom: 40px;
+      }
+      @media screen and (min-width: $lg) {
+        gap: 36px;
+      }
+      input {
+        flex-grow: 1;
+        margin-bottom: 0;
+        min-width: 10px;
+      }
+    }
+    &--bottom {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-weight: 600;
+      margin-top: 20px;
+      a {
+        color: $primary-color;
+        font-weight: 700;
+      }
+      @media screen and (min-width: $md) {
+        margin-top: 40px;
+        gap: 46px;
+      }
+    }
+  }
+}

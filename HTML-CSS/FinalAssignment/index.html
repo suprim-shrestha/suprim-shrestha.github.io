@@ -500,6 +500,69 @@
           </div>
         </div>
       </section>
+      <section class="registration">
+        <div class="container">
+          <div class="registration__main">
+            <div class="registration__title">
+              <h1>Get your vaccine registration today</h1>
+            </div>
+            <div class="registration__image">
+              <div class="registration__image--title">
+                COVID-19 <br />
+                Vaccine
+              </div>
+              <div class="registration__image--button">
+                <button class="btn btn-verify-status">Verify Status</button>
+              </div>
+              <div class="registration__image--virus">
+                <figure>
+                  <img src="assets/images/virus.png" alt="Virus" />
+                </figure>
+              </div>
+              <div class="registration__image--bg">
+                <figure>
+                  <img
+                    src="assets/images/vaccine-inject.png"
+                    alt="Vaccine Injection"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div>
+              <form class="registration__form">
+                <label for="full-name">Patient's Full Name</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="full-name"
+                  placeholder="Full name"
+                />
+                <label for="mobile-number">Mobile Number</label>
+                <p>
+                  Notifications for appointment and reminders will be sent to
+                  this provided number
+                </p>
+                <div class="registration__form--number">
+                  <input
+                    type="number"
+                    id="mobile-number"
+                    name="mobile-number"
+                    placeholder="Phone number"
+                  />
+                  <div>
+                    <button class="btn primary btn-verify-phone">Verify</button>
+                  </div>
+                </div>
+                <button class="btn primary">Submit</button>
+                <div class="registration__form--bottom">
+                  Already registered ?
+                  <a href="#">Check your status</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
