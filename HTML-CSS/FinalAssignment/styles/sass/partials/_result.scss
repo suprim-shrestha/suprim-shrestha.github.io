@@ -1,9 +1,5 @@
 .results-section {
-  background-image: url(../assets/images/bg-image.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
-  background-position-y: top;
+  @extend %bg-image;
   padding: 84px 0 32px;
   @media screen and (min-width: $md) {
     padding: 57px 0;
