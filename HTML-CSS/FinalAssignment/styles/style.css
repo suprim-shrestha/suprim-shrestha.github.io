@@ -914,6 +914,9 @@ h1 {
     margin: 0 93px;
   }
 }
+.result__bottom span {
+  display: inline-block;
+}
 .result__bottom a {
   text-decoration: underline;
   color: #17c2ec;
