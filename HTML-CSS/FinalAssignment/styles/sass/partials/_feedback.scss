@@ -106,8 +106,18 @@
         font-size: 18px;
       }
     }
+    &.is-active {
+      background: $primary-color;
+      & * {
+        color: transparentize(#fff, 0.25);
+      }
+      .feedback__card--name {
+        color: #fff;
+      }
+    }
   }
   &__card-bg {
+    z-index: -1;
     position: absolute;
     max-width: 124px;
     top: -10%;
