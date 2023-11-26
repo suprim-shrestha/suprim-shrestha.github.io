@@ -35,4 +35,15 @@
   &.btn-verify-phone {
     padding: 20px 70px;
   }
+  &.btn-quote {
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    background: #0b153c;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    padding: 10px 24px 9.5px 14px;
+    @media screen and (min-width: $md) {
+      border-radius: 0px 30px 30px 0px;
+      padding: 17px 30px 18px;
+    }
+  }
 }

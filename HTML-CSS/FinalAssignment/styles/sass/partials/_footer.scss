@@ -1,0 +1,169 @@
+.footer {
+  @extend %bg-image;
+  padding: 133px 0 30px;
+  position: relative;
+  @media screen and (min-width: $md) {
+    padding: 270px 0 50px;
+  }
+  @media screen and (min-width: $lg) {
+    padding: 327px 0 123px;
+  }
+  &__quote-bg {
+    position: absolute;
+    border-radius: 20px;
+    background: rgba(196, 196, 196, 0.15);
+    padding: 31px 12px 28px;
+    width: 85%;
+    max-width: 1067px;
+    top: -114px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    @media screen and (min-width: $md) {
+      top: -104px;
+      border-radius: 50px;
+      padding: 28px 25px;
+    }
+    @media screen and (min-width: $lg) {
+      top: -215px;
+      padding: 18px;
+    }
+  }
+  &__quote {
+    border-radius: 10px;
+    background: $primary-color;
+    text-align: center;
+    color: #fff;
+    padding: 16px 0 28px;
+    @media screen and (min-width: $md) {
+      border-radius: 50px;
+      padding: 16px 0 58px;
+    }
+    @media screen and (min-width: $lg) {
+      padding: 70px 0 107px;
+    }
+    p {
+      font-size: 10px;
+      margin: 5px 0 24px;
+      @media screen and (min-width: $sm) {
+        font-size: 20px;
+      }
+      @media screen and (min-width: $md) {
+        margin: 20px 0 28px;
+      }
+      @media screen and (min-width: $lg) {
+        font-size: 24px;
+        margin: 20px 0 40px;
+      }
+    }
+  }
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    input {
+      min-width: 0px;
+      border: none;
+      border-radius: 20px 0px 0px 20px;
+      background: #fff;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+      font-size: 10px;
+      padding: 14px 13px;
+      width: 100%;
+      max-width: 148px;
+      @media screen and (min-width: $md) {
+        padding: 26px 40px;
+        font-size: 20px;
+        border-radius: 30px 0px 0px 30px;
+        max-width: 370px;
+      }
+    }
+    span {
+      display: flex;
+      align-items: center;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+      @media screen and (min-width: $md) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: $lg) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  &__logo a {
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: 700;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      height: 3px;
+      width: 80px;
+      background-color: $primary-color;
+      transition: width 0.3s ease;
+      @media screen and (min-width: $lg) {
+        width: 100px;
+      }
+    }
+  }
+  &__navbar {
+    @media screen and (min-width: $lg) {
+      margin: 0 auto;
+    }
+  }
+  &__links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px 0 20px;
+    @media screen and (min-width: $md) {
+      margin: 53px 0 40px;
+      flex-direction: row;
+      gap: 25px;
+      align-items: center;
+    }
+    @media screen and (min-width: $lg) {
+      margin: 0;
+    }
+  }
+  &__link {
+    color: $faded-white;
+    &--active {
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+  &__actions {
+    display: flex;
+    gap: 4px;
+    @media screen and (min-width: $md) {
+      gap: 6px;
+    }
+    @media screen and (min-width: $lg) {
+      gap: 10px;
+    }
+    svg {
+      width: 18px;
+      height: 18px;
+      @media screen and (min-width: $md) {
+        width: 32px;
+        height: 32px;
+      }
+      @media screen and (min-width: $lg) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
