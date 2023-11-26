@@ -110,6 +110,7 @@
       border-radius: 10px;
       background: rgba(196, 196, 196, 0.1);
     }
+    margin-bottom: 20px;
     @media screen and (min-width: $sm) {
       gap: 20px;
       font-size: 24px;
@@ -118,6 +119,12 @@
         height: 30px;
         padding: 5px;
       }
+    }
+    @media screen and (min-width: $md) {
+      margin-bottom: 32px;
+    }
+    @media screen and (min-width: $lg) {
+      margin-bottom: 10px;
     }
   }
   &__appointment-outer {

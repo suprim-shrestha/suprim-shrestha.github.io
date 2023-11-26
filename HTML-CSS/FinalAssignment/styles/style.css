@@ -667,6 +667,7 @@ h1 {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 20px;
 }
 .hero__bottom--title span {
   display: flex;
@@ -684,6 +685,16 @@ h1 {
     width: 30px;
     height: 30px;
     padding: 5px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__bottom--title {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .hero__bottom--title {
+    margin-bottom: 10px;
   }
 }
 .hero__appointment-outer {
