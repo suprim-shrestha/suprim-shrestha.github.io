@@ -45,6 +45,7 @@
       margin-top: 100px;
       flex-direction: row;
       justify-content: space-between;
+      align-items: stretch;
     }
   }
   &__card {
@@ -54,6 +55,28 @@
     background: rgba(196, 196, 196, 0.5);
     max-width: 259px;
     flex: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 124px;
+      height: 202px;
+      transform: translate(-50%, -55%);
+      background-image: url(../assets/images/card-bg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      z-index: -1;
+      @media screen and (min-width: $md) {
+        width: 173px;
+        height: 283px;
+      }
+      @media screen and (min-width: $lg) {
+        width: 294px;
+        height: 479px;
+      }
+    }
     @media screen and (min-width: $md) {
       padding: 30px 30px 44px;
       border-radius: 20px;
@@ -114,23 +137,6 @@
       .feedback__card--name {
         color: #fff;
       }
-    }
-  }
-  &__card-bg {
-    z-index: -1;
-    position: absolute;
-    max-width: 124px;
-    top: -10%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    @media screen and (min-width: $md) {
-      max-width: 174px;
-    }
-    @media screen and (min-width: $lg) {
-      max-width: 294px;
-      left: 15%;
-      transform: none;
-      top: -60%;
     }
   }
 }
